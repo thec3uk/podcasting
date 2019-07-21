@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:anchor="https://anchor.fm/xmlns">
+  <channel>
+    <title><![CDATA[Hillsong Creative Podcast]]></title>
+    <description><![CDATA[Hosted by Rich Langton from Hillsong Creative, listen to exclusive interviews with creative experts & influencers from around the world. Hear from producers & artists who have worked with the world's leading brands and performers, award-winning writers and designers as well as our own team from Hillsong Worship, United, and Young & Free. Get behind the scenes with the dreamers & doers in various spheres and creative disciplines. You'll be encouraged, inspired, and challenged as we find out what they’ve learnt and what we can learn from their journey!]]></description>
+    <link>https://anchor.fm/hillsong-creative-podcast</link>
+    <image>
+      <url>https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded_nologo/993206/993206-1544764559287-2f1b50d4b2b02.jpg</url>
+      <title>Hillsong Creative Podcast</title>
+      <link>https://anchor.fm/hillsong-creative-podcast</link>
+    </image>
+    <generator>Anchor Podcasts</generator>
+    <lastBuildDate>Mon, 27 May 2019 11:40:59 GMT</lastBuildDate>
+    <atom:link href="https://anchor.fm/6841998/podcast/rss" rel="self" type="application/rss+xml"/>
+    <copyright><![CDATA[Hillsong Creative Podcast]]></copyright>
+    <language><![CDATA[en-au]]></language>
+    <itunes:author>Hillsong Creative Podcast</itunes:author>
+    <itunes:summary>Hosted by Rich Langton from Hillsong Creative, listen to exclusive interviews with creative experts &amp; influencers from around the world. Hear from producers &amp; artists who have worked with the world&apos;s leading brands and performers, award-winning writers and designers as well as our own team from Hillsong Worship, United, and Young &amp; Free. Get behind the scenes with the dreamers &amp; doers in various spheres and creative disciplines. You&apos;ll be encouraged, inspired, and challenged as we find out what they’ve learnt and what we can learn from their journey!</itunes:summary>
+    <itunes:type>episodic</itunes:type>
+    <itunes:owner>
+      <itunes:name>Hillsong Creative Podcast</itunes:name>
+      <itunes:email>podcasts7+6841998@anchor.fm</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:category text="Religion &amp; Spirituality">
+      <itunes:category text="Christianity"/>
+    </itunes:category>
+    <itunes:image href="https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded_nologo/993206/993206-1544764559287-2f1b50d4b2b02.jpg"/>
+    <item>
+      <title><![CDATA[044 Erwin McManus - The Way of the Warrior]]></title>
+      <description><![CDATA[<p>Erwin McManus is an author, futurist, filmmaker, designer, and lead pastor of Mosaic Church in LA, passionate about identity and imagination. Listen as Erwin tears the veil between creativity and spirituality. He shares about his life and evolution as a Christian, writer, and creative in the middle of one of the world’s most prominent centers for creativity and innovation. Learn about his creative process for <a href="https://erwinmcmanus.com">his new book</a>, <em>The Way of the Warrior</em>, and how a living a life of art and beauty is essential to humanity and inner peace.</p>]]></description>
+      <link>https://anchor.fm/hillsong-creative-podcast/episodes/044-Erwin-McManus---The-Way-of-the-Warrior-e44kms</link>
+      <guid isPermaLink="false">d51811a2-64f8-c5ba-e93c-6440f511867e</guid>
+      <pubDate>Mon, 27 May 2019 00:00:00 GMT</pubDate>
+      <enclosure url="https://anchor.fm/s/6841998/podcast/play/3346588/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fproduction%2F2019-4-23%2F15796619-44100-2-eaebb63b10ec6.mp3" length="74065198" type="audio/mpeg"/>
+      <itunes:summary>&lt;p&gt;Erwin McManus is an author, futurist, filmmaker, designer, and lead pastor of Mosaic Church in LA, passionate about identity and imagination. Listen as Erwin tears the veil between creativity and spirituality. He shares about his life and evolution as a Christian, writer, and creative in the middle of one of the world’s most prominent centers for creativity and innovation. Learn about his creative process for &lt;a href=&quot;https://erwinmcmanus.com&quot;&gt;his new book&lt;/a&gt;, &lt;em&gt;The Way of the Warrior&lt;/em&gt;, and how a living a life of art and beauty is essential to humanity and inner peace.&lt;/p&gt;</itunes:summary>
+      <itunes:explicit>No</itunes:explicit>
+      <itunes:duration>2985</itunes:duration>
+      <itunes:image href="https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded_nologo/993206/993206-1544764559287-2f1b50d4b2b02.jpg"/>
+      <itunes:season>5</itunes:season>
+      <itunes:episode>44</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+  </channel>
+</rss>

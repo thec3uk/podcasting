@@ -1,18 +1,67 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Podcast Manager`,
+    description: `Website to create & manage podcast feeds`,
+    author: `@nanorepublica`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        {
+        resolve: 'gatsby-source-s3',
+        options: {
+          aws: {
+            accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+            secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+          },
+          buckets: ['thec3-teaching-series'],
+        },
       },
-    },
+      {
+        resolve: `gatsby-plugin-feed`,
+        options: {
+            query: `{
+                site {
+                siteMetadata {
+                  title
+                  author
+                  description
+                }
+              }
+}
+`,
+          feeds: [
+            {
+              serialize: ({ query: { site, allS3Object } }) => {
+                return allS3Object.edges.map(({node}) => {
+                  return {
+                    title: 'PREACH',
+                    description: 'A C3 Preach',
+                    date: new Date(node.Key.split('/').splice(0,3).join('-')),
+                    url: `https://${node.Name}.s3.amazonaws.com/${node.Key}`,
+                    guid: `https://${node.Name}.s3.amazonaws.com/${node.Key}`,
+                  }
+                })
+              },
+              query: `
+                {
+                  allS3Object(filter: {Key: {regex: "/[mp3]$/"}}) {
+                    edges {
+                      node {
+                        Key
+                        Name
+                        Size
+                        ETag
+                      }
+                    }
+                }
+                }
+              `,
+              output: "/feed.xml",
+              title: "The C3 Audio Podcast",
+            },
+          ],
+        },
+      },
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
