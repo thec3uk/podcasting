@@ -62,6 +62,8 @@ module.exports = {
       options: {
         query: `{
                 site {
+                  host
+                  port
                 siteMetadata {
                   title
                   author
@@ -103,7 +105,7 @@ module.exports = {
             {
               "itunes:image": {
                 _attr: {
-                  href: query.imageSharp.original.src,
+                  href: `https://${query.site.host}${query.imageSharp.original.src}`,
                 },
               },
             },
@@ -170,7 +172,7 @@ module.exports = {
                       {
                         "itunes:image": {
                           _attr: {
-                            href: imageSharp.original.src,
+                            href: `https://${site.host}${imageSharp.original.src}`,
                           },
                         },
                       },
