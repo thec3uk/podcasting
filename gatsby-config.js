@@ -79,10 +79,16 @@ module.exports = {
                   if (S3Obj !== undefined) {
                     var S3ObjNode = S3Obj.node
                     var s3URL = `https://${S3ObjNode.Name}.s3.amazonaws.com/${S3ObjNode.Key}`
-
+                    var description = node.Description
+                    if (node.Speaker != '') {
+                      description = description + `, Speaker: ${node.Speaker}`
+                    }
+                    if (node.Bible_References != '') {
+                      description = description + `, Bible Reference: ${node.Bible_References}`
+                    }
                     return {
                       title: node.Recording_Title,
-                      description: node.Description,
+                      description: description,
                       date: new Date(S3ObjNode.Key.split('/').splice(0,3).join('-')),
                       url: s3URL,
                       guid: s3URL,
