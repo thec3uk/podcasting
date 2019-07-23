@@ -145,6 +145,7 @@ module.exports = {
                       `, Bible Reference: ${node.Bible_References}`
                   }
                   return {
+                    // <content:encoded>...</content:encoded>
                     title: node.Recording_Title,
                     description: description,
                     date: new Date(
@@ -161,6 +162,10 @@ module.exports = {
                       type: "audio/mpeg",
                     },
                     custom_elements: [
+                      { "itunes:title", node.Recording_Title },
+                      { "itunes:summary", description },
+                      { "itunes:explicit", "no" },
+                      { "itunes:episodeType", "full" },
                       { "itunes:author": node.Speaker },
                       {
                         "itunes:image": {
@@ -169,6 +174,11 @@ module.exports = {
                           },
                         },
                       },
+                      {
+                      "content:encoded": {
+                          _cdata: `${description}`
+                        }
+                      }
                     ],
                   }
                 }
