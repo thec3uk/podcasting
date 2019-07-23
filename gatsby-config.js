@@ -110,7 +110,7 @@ module.exports = {
             {
               "itunes:owner": [
                 { "itunes:name": "The C3 Church" },
-                { "itunes:email": "hello@thec3.uk" },
+                { "itunes:email": "andrew.miller@thec3.uk" },
               ],
             },
           ],
