@@ -23,6 +23,7 @@ module.exports = {
     title: `The C3 Audio Podcast`,
     description: `Welcome to the audio podcast feed of The C3 Church. To find out more visit http://www.thec3.uk`,
     author: `The C3 Church`,
+    siteURL: `https://boring-dijkstra-1928f8.netlify.com`
   },
   plugins: [
     {
@@ -62,12 +63,11 @@ module.exports = {
       options: {
         query: `{
                 site {
-                  host
-                  port
                 siteMetadata {
                   title
                   author
                   description
+                  siteUrl
                 }
               }
               imageSharp {
@@ -105,7 +105,7 @@ module.exports = {
             {
               "itunes:image": {
                 _attr: {
-                  href: `https://${query.site.host}${query.imageSharp.original.src}`,
+                  href: `${query.site.siteMetadata.siteURL}${query.imageSharp.original.src}`,
                 },
               },
             },
@@ -172,7 +172,7 @@ module.exports = {
                       {
                         "itunes:image": {
                           _attr: {
-                            href: `https://${site.host}${imageSharp.original.src}`,
+                            href: `${site.siteMetadata.siteURL}${imageSharp.original.src}`,
                           },
                         },
                       },
