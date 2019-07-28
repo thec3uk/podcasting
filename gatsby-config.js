@@ -156,7 +156,7 @@ module.exports = {
                         .join("-")
                     ),
                     url: s3URL,
-                    guid: s3URL,
+                    guid: node.guid || s3URL,
                     author: node.Speaker,
                     enclosure: {
                       url: s3URL,
@@ -211,6 +211,7 @@ module.exports = {
         File_3
         File_4
         File_5
+        guid
       }
     }
   }
