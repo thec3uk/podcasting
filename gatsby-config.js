@@ -81,6 +81,16 @@ module.exports = {
             itunes: "http://www.itunes.com/dtds/podcast-1.0.dtd",
           },
           custom_elements: [
+            {"atom:link" : [
+              {
+                _attr: {
+                  "href": "https://boring-dijkstra-1928f8.netlify.com/feed.xml",
+                  "rel": "self",
+                  "type""application/rss+xml"
+                }
+              }
+            ]},
+            {"language": "en-gb"},
             { "itunes:author": "The C3 Church" },
             { "itunes:explicit": "No" },
             {
