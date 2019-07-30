@@ -86,7 +86,7 @@ module.exports = {
                 _attr: {
                   "href": "https://boring-dijkstra-1928f8.netlify.com/feed.xml",
                   "rel": "self",
-                  "type""application/rss+xml"
+                  "type":"application/rss+xml"
                 }
               }
             ]},
