@@ -90,7 +90,7 @@ module.exports = {
               "itunes:category": [
                 {
                   _attr: {
-                    text: "Religion &amp; Spirituality",
+                    text: "Religion & Spirituality",
                   },
                 },
                 {
